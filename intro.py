@@ -1,4 +1,4 @@
-''' 
+"""
 what is python?
     python is a high level programming language which is used to communicate with computers.
     python was created by Guido van rossum and released in 1991.
@@ -42,4 +42,4 @@ why comments are important
     to understand the code better in further
     Improves code reliability
     Useful when working with teams
-'''
+"""
