@@ -22,7 +22,9 @@ What can i become if i learn python.
     Game developer.
     Data analyst.
     Automation engineer.
-Python syntax:
+    
+Python 
+Syntax:
     Rules for writing the python code
 Key points:
     simple and readable.
