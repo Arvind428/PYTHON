@@ -79,11 +79,14 @@ print(type(data))
 '''
 #ex:
 t=(1,2,3)
+print(t)
+print(type(t))
 
 #set
 #unordered
 #no duplicates
-s={1,2,3,3}#it does not print duplicates even if we stored in the sourse code
+s={1,2,3,3}
+#it does not print duplicates even if we stored in the sourse code
 print(s)
 
 #dictonary
