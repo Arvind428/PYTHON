@@ -1,3 +1,0 @@
-def fun(fname, lname,cgpa,course):
-    print("Hi Im"+fname+lname+" B-Tech "+course+" with "+cgpa)
-fun('ARVIND','GOUD','40%','CSE')
