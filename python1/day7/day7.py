@@ -1,4 +1,3 @@
-#not started yet
 """
 Operators : Special symbols like +,-,/,* etc
 Operands : VAlue on which the operator is applied
