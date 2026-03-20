@@ -28,4 +28,4 @@ if age<20:
 elif 20 < age >60:
     print("you may drink")
 else:
-    print("alochol is not good for your health")       
+    print("alochol is not good for your health")

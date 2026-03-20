@@ -66,22 +66,23 @@ print(a << 2)#Left
 a = 10
 b = a# assigns value of a to b
 print(b)
-b += a# 
-print(b)
-b -= a
-print(b)
-b *= a
-print(b)
-b <<= a
-print(b)
+b += a#b=b+a -> 10+10=20
+print(b)#20 now b=20
+b -= a#b=b-a -> 20-10=10
+print(b)#10 now b=10
+b *= a# b*a -> 10*10=100
+print(b)#now b=100
+b <<= a#    b=b<<a -> 100<<10
+# 100<<10 -> 100*1024=102400
+print(b)#now b=102400
 
 
 #Identity Operators
 a = 10
 b = 20
 c = a
-print(a is not b)
-print(a is c)
+print(a is not b)# is not (True if the operands are not identical)
+print(a is c)#True (True if the operands are identical)
 
 #Membership Operators
 #used to know whether a value or variable is in sequence or not
@@ -91,12 +92,12 @@ x = 24
 y = 20
 list = [10, 20, 30, 40, 50]
 
-if (x not in list):
+if (x not in list):#True if value is not found in the sequence
     print("x is NOT present in given list")
 else:
     print("x is present in given list")
 
-if (y in list):
+if (y in list):#True if value is found in the sequence
     print("y is present in given list")
 else:
     print("y is NOT present in given list")
