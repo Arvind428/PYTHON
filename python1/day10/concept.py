@@ -1,4 +1,6 @@
+
 """
+Decorator is used when the same block of code needs to run before or after multiple functions, so you don't repeat it everywhere.
 def decorator(birth):
     def dec_mate():
         print(birth().upper())
@@ -50,3 +52,15 @@ like variable or a function name
 
 #for=10
 #    print(for)
+
+
+#Numeric Data Types
+a=5
+print(type(a))
+
+b=5.0
+print(type(b))
+
+c=2+4j
+print(type(c))
+

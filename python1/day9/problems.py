@@ -1,59 +1,60 @@
-num=int(input("enter the number"))
-if (num>0):
-    print("positive number")
-elif(num==0):
-    print("Zero")
-else:
-    print("negative")
-#----------------------------------------------------#
-num1 = int(input("enter first number: "))
-num2 = int(input("enter second number: "))
-if(num1>num2):
-    print(f"{num1} is larger")
-elif(num2>num1):
-    print(f"{num2} is larger")
-else:
-    print("both are equal")
+#Take two numbers as input and print their sum, difference, product, and quotient.
+a=int(input("enter 1st value"))
+b=int(input("enter 2nd value"))
+print(a+b)
+print(a-b)
+print(a/b)
+print(a*b)
 
-#---------------------------------------------------------#
-cost = float(input("Enter cost price: "))
-sell = float(input("Enter selling price: "))
+name=input("enter ur name")
+age=int(input("enter your age"))
+age10=age+10
+print(f"Hello {name} You will be {age10} in 10 years")
+#(Formula: F = C × 9/5 + 32)
+temp=int(input("Enter the tempereature in celcius:"))
+new_temp= temp*9/5+32
+print(new_temp)
+price=float(input("enter the price"))
+dis=float(input("enter the discount"))
+v=(dis/100)*price
+print(price-v)
 
-diff = sell - cost
-if diff > 0:
-    print("Profit of", diff)
-elif diff < 0:
-    print("Loss of", abs(diff))
-else:
-    print("No profit, no loss")
-#--------------------------------------------------------------#
-year=int(input("enter the year"))
-if ((year%4==0 and year%100!=0) or (year%400==0)):
-    print(f"{year} is leap year")
-else:
-    print(f"{year} is not a leap year")
-#---------------------------------------------------------#
+#circle area (pi*r*r) and circumferance(2*pi*r)
+r=int(input("enter the radius of circle"))
+pi=3.14159
+area=pi*r*r
+cir=2*pi*r
+print(f"The area of circle is {area} and circumferance of circle is {cir}")
 
-a=int(input("enter the first num"))
-b=int(input("enter the second num"))
-c=int(input("enter the 3rd num"))
-if (a>b  and a>c):
-    print(f"{a} is largest number")
-elif(b>a and b>c):
-    print(f"{b} is the largest number")
-elif(c>a and c>b):
-    print(f"{c} is the largest number")
-else:
-    print(f"{a},{b},{c} are equal")
-#-------------------------------------------------------#
-marks=int(input("enter your marks"))
-if (marks<=100 and marks>90):
-    print("A")
-elif (marks<=90 and marks>75):
-    print("B")
-elif (marks<=75 and marks>60):
-    print("C")    
-elif (marks<=60 and marks>50):
-    print("D")
-elif (marks<50):
-    print("Fail")
+i=int(input("enter 4 digit num"))
+d1=i//1000
+d2=(i//100)%10
+d3=(i//10)%10
+d4=i%10
+print(d1,d2,d3,d4)
+total=d1+d2+d3+d4
+print(f"the sum if all digits is {total}")
+dist=float(input("Enter the distance in km:"))
+time=float(input("Enter the time in hours:"))
+avg_speed=dist/time
+print(avg_speed)
+m=int(input("marks obtained in math"))
+p=int(input("marks obtained in phy"))
+c=int(input("marks obtained in chem"))
+total=m+p+c
+perc=(total/300)*100
+print(perc)
+
+p=float(input("enter the principal amount"))
+r=float(input("enter the rate of interest"))
+t=float(input("time to clear the loan"))
+SI=(p*r*t)/100
+print(SI)
+
+
+cost=100
+sell=130
+profit=sell-cost
+print(profit)
+loss=cost-sell
+print(loss)
