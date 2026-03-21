@@ -48,19 +48,59 @@ incorrectly.Keywords can not be used as identifiers
 like variable or a function name
                         
 """
-#Example
-
-#for=10
-#    print(for)
 
 
-#Numeric Data Types
-a=5
-print(type(a))
 
-b=5.0
-print(type(b))
+"""
+If Conditional Statement:
+If statement is the simplest form of a conditional statement. 
+It executes a block of code if the given condition is true.
 
-c=2+4j
-print(type(c))
+Short hand if:
+age = 19
+if age > 18: print("Eligible to Vote.")
 
+------------------------------------------------------------------------------
+
+If-else Conditinal statements
+If Else allows us to specify a block of code 
+that will execute if the condition(s)
+associated with an if or elif statement evaluates to False.
+Else block provides a way to handle all other cases 
+that don't meet the specified conditions.
+
+------------------------------------------------------------------------------
+elif Statement
+elif statement in Python stands for "else if."
+It allows us to check multiple conditions,
+providing a way to execute different blocks of code
+based on which condition is true. 
+Using elif statements makes our code more readable and efficient
+by eliminating the need for multiple nested if statements.
+
+
+------------------------------------------------------------------------------------
+Nested if..else Conditional Statement
+Nested if..else means an if-else statement inside another if statement. 
+We can use nested if statements to check conditions within conditions.
+-----------------------------------------------------------------------------------
+
+
+Match-Case Statement
+match-case statement is Python's version of a switch-case found in other languages.
+ It allows us to match a variable's value against a set of patterns.
+
+number = 2
+
+match number:
+    case 1:
+        print("One")
+    case 2 | 3:
+        print("Two or Three")
+    case _:
+        print("Other number")
+
+
+
+
+"""
