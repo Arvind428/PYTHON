@@ -17,13 +17,13 @@ That's all it is — same logic, just shorter.
 x=int(input())
 square=[x**2 for x in range(1,x+1)]
 print(square)
-
 # using if condition in for loop
 x=int(input())
 even=[x for x in range(x) if x%2==0]
 print(even)
-
-#using if else condition 
+#using if else condition
 x=[1,2,4,6,8,2,341,6,56]
-even=[f"{i}even" if x%2==0 else f"{i}odd" for i,x in enumerate(x)]
+even=[f"{i} even" if x%2==0 else f"{i} odd" for i,x in enumerate(x)]
 print(even)
+#----------------------------------------------------------------------------------------------------------------------------
+# BASIC DECORATOR
