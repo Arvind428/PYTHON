@@ -11,3 +11,17 @@ Lists can be created in several ways, such as using square brackets [] , the lis
 (such as tuple, string or another list) to the list() constructor.
 
 """
+a = [1, 2, 3, 4, 5] #int
+b = ['apple', 'banana', 'cherry']#string
+c = [1, 'hello', 3.14, True] # mixed
+
+print(a)
+print(b)
+print(c)
+
+
+
+a = list((1, 2, 3, 'apple', 4.5))  
+print(a)
+b = list("GFG")
+print(b)

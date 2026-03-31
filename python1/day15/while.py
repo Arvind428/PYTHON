@@ -4,4 +4,3 @@ while i<len(x):
     print(x[i])
     i+=1
     print(i,"location")
-    #ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
