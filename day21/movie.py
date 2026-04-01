@@ -12,12 +12,12 @@ lb4=Label(a,text="Tickets",font=("arail bold",20))
 lb4.grid(column=0,row=3)
 e1=Entry(a,width=15)
 e1.grid(column=1,row=1)
-option=["Peddi","KGF","RRR"]
+option=["Peddi","KGF","RRR",]
 v1=StringVar()
 v1.set("select")
 d1=OptionMenu(a,v1,*option)
 d1.grid(column=1,row=2)
-tickets=[1,2,3,4,5]
+tickets=[1,2,3,4,5,6,7,8,9,10]
 v2=IntVar()
 v2.set("select")
 d2=OptionMenu(a,v2,*tickets)
