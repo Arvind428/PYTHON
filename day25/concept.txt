@@ -1,0 +1,28 @@
+
+        Python is a general purpose programming language known for its simplicity and ease of use .This ease of use has made python the most Popular programming language
+
+Python used in many fields
+-Data Science
+-Machine learning
+-Web development
+-Scripting 
+-Automation
+-embedded systems
+-IoT
+-Much more
+
+Python is The Main language for Data scientists and machine learning engineers
+
+Python has Libraries like
+Pandas and Numpy which makes data analysis less tedious
+where as Tensorflow and Scikit make machine learning and working with Ai models much more accessible
+
+
+
+IN WEB DEVELOPMENT
+
+Frameworks like Django,FastAPI and Flask
+let developers build scalable and secure back-end systems with minimal effort
+Many Platforms like Instagram and Pinteresr use Python on the back-end
+
+
