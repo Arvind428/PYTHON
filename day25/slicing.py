@@ -1,3 +1,5 @@
+#3333333333333333333333333333333333#
+
 #WHAT IS STRING SLICING
 # string slicing lets you extract a portion of a string or work with only a specific part of it
 
@@ -16,4 +18,6 @@ print(str[4:])#o world
 print(str[0:11:2])#HloWrd
 #useful tip
 #We can reverse a string by using this syntax
-print(str[::-1])
+print(str[::-1])#dlorw olleH
+
+#STEP OPERATOR specifies the increment between each characte to extract

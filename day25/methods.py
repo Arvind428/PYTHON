@@ -1,3 +1,5 @@
+
+##########444444444444444444444444444444########
 #Methods in Strings
 str="ArvInd"
 print(str.upper())
@@ -50,3 +52,4 @@ print(new.islower())
 #islower(): Returns True if all letters in the string are lowercase and False if not.
 
 print(new.title())
+#title(): Returns a new string with the first letter of each word capitalized.

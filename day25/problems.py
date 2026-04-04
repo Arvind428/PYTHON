@@ -1,3 +1,5 @@
+#11111111111111111111111111111111111111111111111111111111#
+
 # we can use single or double quotes for decalring a string
 my_str1='Hello'
 my_str2="World"
@@ -50,3 +52,7 @@ print(greeting)# hello
 
 greeting='hi'
 greeting[0]='H'
+# we get this error
+#     greeting[0]='H'
+#     ~~~~~~~~^^^
+# TypeError: 'str' object does not support item assignment
