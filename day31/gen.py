@@ -1,5 +1,6 @@
 #Generators---------
-#it is special type of a function that returns values one by one instead of returning everything at once
+#It is special type of a function that returns values one by one 
+#instead of returning everything at once
 
 """
 def num():
@@ -70,11 +71,10 @@ print(next(n))
 
 
 
-
 def div3(n):
-  for i in range(1, n + 1):
+  for i in range(2, n + 1):
     if i % 3 == 0:
       yield i
 hi=div3(int(input()))
-print(next(hi))
-print(next(hi))
+for v in hi:
+    print(v)
