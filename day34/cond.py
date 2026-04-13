@@ -1,5 +1,5 @@
 """
-Conditional Statements,or conditinals 
+How Do Conditional Statements and Logical Operators Work?
 
 We know that we only have two values in a boolean statements 
 they are True and False
@@ -29,5 +29,12 @@ if age>18:
     print("you are  adult")
 
 #intendation error comes when you try to write print staement right below the if statement
-if age<18:
-print(age)
+# if age<18:
+# print(age)
+"""
+  File "c:\Users\arvin\OneDrive\Desktop\PYTHON\day34\cond.py", line 33
+    print(age)
+    ^^^^^
+IndentationError: expected an indented block after 'if' statement on line 32 
+"""
+
