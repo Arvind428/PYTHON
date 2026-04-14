@@ -1,7 +1,9 @@
+#write a decorator to implement square of a number 
+#  which was acquired by the 2 func add() & sub() these are outer functions
 def square_decorator(func):
     def wrapper(a, b):
         result = func(a, b)  
-        return result ** 2   
+        return result * result   
     return wrapper
 
 
@@ -13,7 +15,4 @@ def add(a, b):
 @square_decorator
 def sub(a, b):
     return a - b
-
-
-print("Square of add:", add(5, 3))  
-print("Square of sub:", sub(5, 3))   
+print(add(4,5))
