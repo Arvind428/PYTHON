@@ -2,7 +2,7 @@
 
 def arth(a,b):
     print("Addition",a+b)
-    print(a-b)
+    print("subtraction",a-b)
     print(a*b)
     print(a/b)
     print(a//b)
@@ -15,6 +15,8 @@ def test(m,n):
     return m+n,m-n,m*n,m/n,m//n,m%n
 
 print(test(5,6))
+
+
 # check even or odd for the given number using functions
 def eo(n):
     if n%2==0:
@@ -23,6 +25,3 @@ def eo(n):
         print(f"{n} is odd")
 
 eo(6)
-
-def test1(x):
-    return x
