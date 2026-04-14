@@ -32,9 +32,6 @@ if age>18:
 # if age<18:
 # print(age)
 """
-  File "c:\Users\arvin\OneDrive\Desktop\PYTHON\day34\cond.py", line 33
-    print(age)
-    ^^^^^
 IndentationError: expected an indented block after 'if' statement on line 32 
 """
 
