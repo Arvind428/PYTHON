@@ -80,4 +80,4 @@ print(++x)#6
 x+=1
 print(x)#7
 x+=6
-print(x)#7+6=
+print(x)#7+6=13
