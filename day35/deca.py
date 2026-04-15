@@ -12,3 +12,4 @@ def sub(a,b):
     return a-b
 
 print(add(2,3))
+print(sub(3,4))
