@@ -36,11 +36,11 @@ def word_count(sentence):
 word_count("we are friends and u dont know anything about me")
 
 #largest word in sentence
-def largest_word(large):
-    y=large.split()
-    for word in large:
-        largest=len(word)
-        if largest>len(word):
-            largest=len(word)
-        print(largest,word)
-largest_word("we are this")
+def largest_word(sentence):
+    words=sentence.split()
+    longest=""
+    for word in words:
+        if len(word)>len(longest):
+            longest=word
+    return longest
+print(largest_word("we are noob"))
