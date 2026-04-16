@@ -23,5 +23,4 @@ def eo(n):
         print(f"{n} is even")
     else :
         print(f"{n} is odd")
-
 eo(6)
