@@ -1,16 +1,19 @@
 # print 1 to n numbers using functions
+def num(n):
+    for i in range(1,n+1):
+        print(i)
+num(6)
 
-def print_numbers(n):
-    if n == 0:
+#using reccursion
+def mun(s):
+    if s==0:
         return
-    print_numbers(n - 1)   # recursive call
-    print(n)
-print_numbers(5)
+    mun(s-1)
+    print(s)
+mun(5)
 
-#reverse a string using functions --str = "Hello"
-def reverse_string(s):
-    if len(s) == 0:
-        return s
-    return reverse_string(s[1:]) + s[0]
-str_val = "Hello"
-print(reverse_string(str_val))
+def mu(s):
+    if s==0:
+        return 0
+    return s+mu(s-1)
+print(mu(5))
