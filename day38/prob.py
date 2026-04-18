@@ -9,6 +9,7 @@ mun(5)
 
 def mu(s):
     if s==0:
-        return
-    return s+mu(s-1)
+        return 0
+    else:
+        return s+mu(s-1)
 print(mu(5))
