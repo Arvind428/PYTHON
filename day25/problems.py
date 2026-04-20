@@ -51,7 +51,7 @@ greeting="hello"
 print(greeting)# hello
 
 greeting='hi'
-greeting[0]='H'
+#greeting[0]='H'
 # we get this error
 #     greeting[0]='H'
 #     ~~~~~~~~^^^
