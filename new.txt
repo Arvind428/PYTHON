@@ -1,1 +1,37 @@
-hi
+create a class animal with constructor  having 2 parameters name, color---
+"""
+class Car:
+    pass
+
+c1 = Car()
+
+c2 = Car()
+
+print((c1))
+
+
+"""
+
+"""
+
+class car:
+
+    def __init__(self):
+        print("Car available")
+
+c1 = car()
+
+"""
+
+"""
+class car:
+    def __init__(self, n, c):
+        self.name = n
+        self.color = c
+
+car1 = car("belino", "black")
+print(car1.name, car1.color)
+
+"""
+
+create a class employee with constructor to print a statement "Hi Developer"
