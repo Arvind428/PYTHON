@@ -6,6 +6,7 @@ class course:
 
 car1 = course("shriya","123")#project assign
 car2=course("arvind","24")
+
 print(car1.name, car1.rno)#external
 print(car2.name,car2.rno)
 
