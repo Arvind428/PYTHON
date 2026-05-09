@@ -1,4 +1,5 @@
 create a class animal with constructor  having 2 parameters name, color---
+
 """
 class Car:
     pass
@@ -8,7 +9,6 @@ c1 = Car()
 c2 = Car()
 
 print((c1))
-
 
 """
 
