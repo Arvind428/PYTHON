@@ -23,3 +23,6 @@ print(car2.name,car2.rno)
 
 # print(car1.name, car1.rno)
 # print(car2.name, car2.rno)
+a="asdfg0"
+b="earthgyh"
+print(f"{a}+{b}")
