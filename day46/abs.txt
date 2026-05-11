@@ -8,3 +8,33 @@
 # make a class animal - contain a method with print("animal is shouting"), make 2 child classes
 #dog - method with print "bow"& cat - method with print "meow"
 djo-wawt-txw
+
+
+
+Create an abstract class Shape
+
+Method:
+
+area()
+
+Create child classes:
+
+Circle
+
+Rectangle
+
+Each should implement area().
+
+2. Vehicle System
+
+Create abstract class Vehicle
+
+Method:
+
+start()
+
+Create child classes:
+
+Car
+
+Bike
