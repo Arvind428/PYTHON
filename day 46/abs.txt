@@ -1,0 +1,10 @@
+#problem on Inheritance super() keyword------------
+
+#initialise a parent class as Employee-constructor with parameter name, child class as Developer - constructor with parameter prog_lang, use super()
+# to get 2 parameter data
+
+
+
+# make a class animal - contain a method with print("animal is shouting"), make 2 child classes
+#dog - method with print "bow"& cat - method with print "meow"
+djo-wawt-txw
