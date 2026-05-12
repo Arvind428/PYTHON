@@ -38,4 +38,3 @@ Create child classes:
 Car
 
 Bike
-
