@@ -1,0 +1,114 @@
+Problem 1
+
+Create a base class Animal.
+
+Subclasses:
+
+Dog
+Cat
+
+Each class should implement: sound method()
+Expected:
+
+Dog → "Bark"
+Cat → "Meow"
+
+Problem 2
+
+Create base class:
+
+Employee
+
+Subclasses:
+
+Manager
+Developer
+Intern
+
+Each employee has:
+
+name
+salary
+
+Manager gets bonus salary.
+
+Developer gets project allowance.
+
+Intern gets stipend.
+
+Create:
+
+calculate_salary()
+
+Problem 3
+
+Create abstract class:
+
+Shape
+
+Abstract method:
+
+area()
+
+Subclasses:
+
+Circle
+Rectangle
+Triangle
+
+Calculate respective areas.
+
+Problem
+
+Base class:
+
+Vehicle
+
+Subclasses:
+
+Bike
+Car
+Bus
+
+Each vehicle:
+
+calculates rent differently
+displays vehicle type
+
+Use method overriding.
+Problem 4
+
+Create abstract class:
+
+Payment
+
+Subclasses:
+
+CreditCardPayment
+UPIPayment
+WalletPayment
+
+Each should implement:
+
+pay(amount)
+
+Use polymorphism to process payments.
+
+problem 5
+Create base class:
+
+Account
+
+Subclasses:
+
+SavingsAccount
+CurrentAccount
+
+Functions:
+
+deposit()
+withdraw()
+
+Savings account gives interest.
+
+Current account has minimum balance rule.

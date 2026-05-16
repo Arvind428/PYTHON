@@ -12,6 +12,7 @@ d1.sound()
 class payment:
     def pay(self,amnt):
         print("Select Payment method")
+        print("amount",amnt)
 class upi(payment):
     def pay(self,amnt):
         print("Selected upi:")
