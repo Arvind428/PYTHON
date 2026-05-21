@@ -134,6 +134,7 @@ user_pred = model.predict(user_input_scaled)
 
 print(f"Predicted AQI: {user_pred[0][0]}")
 
+
 # | Concept | Purpose |
 # |---------|---------|
 # | **Pandas** | Data loading, cleaning, and manipulation |
