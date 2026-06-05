@@ -5,4 +5,3 @@ print(list(zip(developers,ids)))
 
 # 733
 # 1337
-
