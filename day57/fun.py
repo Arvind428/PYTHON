@@ -1,11 +1,8 @@
-#creating a function
-def my_function():
-  print("Hello from a function")
-
+#function
 def my_fun():
   print("Hello from a function")
 
-my_function()
+my_fun()
 
 #arguments
 # Information can be passed into functions as arguments.
