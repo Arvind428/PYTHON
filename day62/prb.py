@@ -64,8 +64,3 @@ a = [8,6,4,9,1,2]
 print(count_sort(a))
 print(count_sort(b)) 
 """
-
-
-
-
-
