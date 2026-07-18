@@ -1,3 +1,0 @@
-1.create a parent class animal havving sound as a method, child class dog having sound as a method
-2.p-employ, ch- developer, ch- manager classes---work method
-3. p-payment, ch-upi, ch-card---method=pay(self, amnt)
