@@ -1,0 +1,67 @@
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char str[100], frame[50][4], temp[4];
+    int seq[50], n = 0, i, j, t;
+
+    printf("Enter message: ");
+    scanf("%99s", str);
+
+    // Divide message into frames
+    for(i = 0; i < strlen(str); i += 3)
+    {
+        for(j = 0; j < 3 && str[i+j] != '\0'; j++)
+            frame[n][j] = str[i+j];
+
+        frame[n][j] = '\0';
+        seq[n] = n;
+        n++;
+    }
+
+    printf("\nBefore Shuffling:\n");
+    for(i = 0; i < n; i++)
+        printf("%d:%s ", seq[i], frame[i]);
+
+    // Reverse frames to show shuffled order
+    for(i = 0; i < n/2; i++)
+    {
+        t = seq[i];
+        seq[i] = seq[n-1-i];
+        seq[n-1-i] = t;
+
+        strcpy(temp, frame[i]);
+        strcpy(frame[i], frame[n-1-i]);
+        strcpy(frame[n-1-i], temp);
+    }
+
+    printf("\n\nAfter Shuffling:\n");
+    for(i = 0; i < n; i++)
+        printf("%d:%s ", seq[i], frame[i]);
+
+    // Sort frames using sequence numbers
+    for(i = 0; i < n-1; i++)
+    {
+        for(j = 0; j < n-i-1; j++)
+        {
+            if(seq[j] > seq[j+1])
+            {
+                t = seq[j];
+                seq[j] = seq[j+1];
+                seq[j+1] = t;
+
+                strcpy(temp, frame[j]);
+                strcpy(frame[j], frame[j+1]);
+                strcpy(frame[j+1], temp);
+            }
+        }
+    }
+
+    printf("\n\nAfter Sorting:\n");
+    for(i = 0; i < n; i++)
+        printf("%s", frame[i]);
+
+    return 0;
+}
