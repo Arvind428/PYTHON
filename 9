@@ -2,66 +2,67 @@
 #include <stdio.h>
 #include <string.h>
 
+struct frame
+{
+    char text[4];
+    int seq;
+};
+
 int main()
 {
-    char str[100], frame[50][4], temp[4];
-    int seq[50], n = 0, i, j, t;
+    struct frame f[50], temp;
+    char str[150];
+    int n = 0, i, j;
 
-    printf("Enter message: ");
-    scanf("%99s", str);
+    printf("Enter the message: ");
+    scanf("%149s", str);
 
     // Divide message into frames
     for(i = 0; i < strlen(str); i += 3)
     {
         for(j = 0; j < 3 && str[i+j] != '\0'; j++)
-            frame[n][j] = str[i+j];
+            f[n].text[j] = str[i+j];
 
-        frame[n][j] = '\0';
-        seq[n] = n;
+        f[n].text[j] = '\0';
+        f[n].seq = n;
         n++;
     }
 
-    printf("\nBefore Shuffling:\n");
+    printf("\nAfter assigning sequence numbers:\n");
     for(i = 0; i < n; i++)
-        printf("%d:%s ", seq[i], frame[i]);
+        printf("%d:%s ", f[i].seq, f[i].text);
 
-    // Reverse frames to show shuffled order
+    // Shuffle frames
     for(i = 0; i < n/2; i++)
     {
-        t = seq[i];
-        seq[i] = seq[n-1-i];
-        seq[n-1-i] = t;
-
-        strcpy(temp, frame[i]);
-        strcpy(frame[i], frame[n-1-i]);
-        strcpy(frame[n-1-i], temp);
+        temp = f[i];
+        f[i] = f[n-1-i];
+        f[n-1-i] = temp;
     }
 
-    printf("\n\nAfter Shuffling:\n");
+    printf("\n\nAFTER SHUFFLING:\n");
     for(i = 0; i < n; i++)
-        printf("%d:%s ", seq[i], frame[i]);
+        printf("%d:%s ", f[i].seq, f[i].text);
 
-    // Sort frames using sequence numbers
+    // Sort frames
     for(i = 0; i < n-1; i++)
     {
         for(j = 0; j < n-i-1; j++)
         {
-            if(seq[j] > seq[j+1])
+            if(f[j].seq > f[j+1].seq)
             {
-                t = seq[j];
-                seq[j] = seq[j+1];
-                seq[j+1] = t;
-
-                strcpy(temp, frame[j]);
-                strcpy(frame[j], frame[j+1]);
-                strcpy(frame[j+1], temp);
+                temp = f[j];
+                f[j] = f[j+1];
+                f[j+1] = temp;
             }
         }
     }
 
-    printf("\n\nAfter Sorting:\n");
+    printf("\n\nAFTER SORTING:\n");
     for(i = 0; i < n; i++)
-        printf("%s", frame[i]);
+        printf("%s", f[i].text);
+
+    printf("\n");
 
     return 0;
 }
