@@ -8,7 +8,7 @@ int main()
     char data[100];
 
     printf("Enter the data: ");
-    scanf("%s", data);
+    scanf("%99s", data);
 
     printf("\n1. Character Count");
     printf("\n2. Character Stuffing");
@@ -20,26 +20,32 @@ int main()
     switch(choice)
     {
         case 1:
-            printf("\nCharacter Count: %lu",
-                   strlen(data) + 1);
+        {
+            printf("\nCharacter Count: %zu", strlen(data) + 1);
             printf("\nData: %s", data);
             break;
+        }
 
         case 2:
+        {
             printf("\nStuffed Data: FLAG ");
 
             for(i = 0; data[i] != '\0'; i++)
             {
                 if(data[i] == 'F' || data[i] == 'E')
+                {
                     printf("E");
+                }
 
                 printf("%c", data[i]);
             }
 
             printf(" FLAG");
             break;
+        }
 
         case 3:
+        {
             count = 0;
 
             printf("\nBit Stuffed Data: ");
@@ -49,9 +55,13 @@ int main()
                 printf("%c", data[i]);
 
                 if(data[i] == '1')
+                {
                     count++;
+                }
                 else
+                {
                     count = 0;
+                }
 
                 if(count == 5)
                 {
@@ -59,10 +69,15 @@ int main()
                     count = 0;
                 }
             }
+
             break;
+        }
 
         default:
+        {
             printf("\nInvalid choice!");
+            break;
+        }
     }
 
     return 0;
