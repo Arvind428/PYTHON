@@ -1,68 +1,26 @@
-
-#include <stdio.h>
-#include <string.h>
-
-struct frame
-{
-    char text[4];
-    int seq;
-};
-
-int main()
-{
-    struct frame f[50], temp;
-    char str[150];
-    int n = 0, i, j;
-
-    printf("Enter the message: ");
-    scanf("%149s", str);
-
-    // Divide message into frames
-    for(i = 0; i < strlen(str); i += 3)
-    {
-        for(j = 0; j < 3 && str[i+j] != '\0'; j++)
-            f[n].text[j] = str[i+j];
-
-        f[n].text[j] = '\0';
-        f[n].seq = n;
-        n++;
-    }
-
-    printf("\nAfter assigning sequence numbers:\n");
-    for(i = 0; i < n; i++)
-        printf("%d:%s ", f[i].seq, f[i].text);
-
-    // Shuffle frames
-    for(i = 0; i < n/2; i++)
-    {
-        temp = f[i];
-        f[i] = f[n-1-i];
-        f[n-1-i] = temp;
-    }
-
-    printf("\n\nAFTER SHUFFLING:\n");
-    for(i = 0; i < n; i++)
-        printf("%d:%s ", f[i].seq, f[i].text);
-
-    // Sort frames
-    for(i = 0; i < n-1; i++)
-    {
-        for(j = 0; j < n-i-1; j++)
-        {
-            if(f[j].seq > f[j+1].seq)
-            {
-                temp = f[j];
-                f[j] = f[j+1];
-                f[j+1] = temp;
-            }
-        }
-    }
-
-    printf("\n\nAFTER SORTING:\n");
-    for(i = 0; i < n; i++)
-        printf("%s", f[i].text);
-
-    printf("\n");
-
-    return 0;
-}
+import numpy as np
+from sklearn.datasets import make_blobs
+class KMeans:
+    def __init__(self, n_clusters, max_iters=100):
+        self.n_clusters = n_clusters
+        self.max_iters = max_iters
+    def fit(self, X):
+        self.centroids = X[np.random.choice(X.shape[0], self.n_clusters, replace=False)]
+        for _ in range(self.max_iters):
+            labels = self._assign_labels(X)
+            new_centroids = self._update_centroids(X, labels)
+            if np.all(self.centroids == new_centroids): 
+                break
+            self.centroids = new_centroids
+    def _assign_labels(self, X):
+        distances = np.linalg.norm(X[:, np.newaxis] - self.centroids, axis=2)
+        return np.argmin(distances, axis=1)
+    def _update_centroids(self, X, labels):
+        new_centroids = np.array([X[labels == i].mean(axis=0) for i in range(self.n_clusters)])
+        return new_centroids
+X, _ = make_blobs(n_samples=300, centers=3, random_state=42)
+kmeans = KMeans(n_clusters=3)
+kmeans.fit(X)
+labels = kmeans._assign_labels(X)
+print("Cluster Assignments:", labels)
+print("Final Centroids:", kmeans.centroids)
