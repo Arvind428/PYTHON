@@ -1,0 +1,66 @@
+import 'package:flutter/material.dart';
+void main() {
+ runApp(MyApp());
+}
+class MyApp extends StatelessWidget {
+ @override
+ Widget build(BuildContext context) {
+ return MaterialApp(
+ title: 'Stateless and Stateful Example',
+ theme: ThemeData(primarySwatch: Colors.blue),
+ home: MyHomePage(),
+ );
+ }
+}
+class MyHomePage extends StatefulWidget {
+ @override
+ MyHomePageState createState() => MyHomePageState();
+}
+class MyHomePageState extends State<MyHomePage> {
+ int _counter = 0; // Counter variable
+ void _incrementCounter() {
+ setState(() {
+ _counter++; // Increment counter
+ });
+ }
+ @override
+ Widget build(BuildContext context) {
+ return Scaffold(
+ appBar: AppBar(
+ title: const Text('Stateless and Stateful Example'),
+ ),
+ body: Column(
+ mainAxisAlignment: MainAxisAlignment.center,
+ children: <Widget>[
+ // Stateless Widget
+ StatelessExample(),
+ const SizedBox(height: 20), // Spacer
+ // Stateful Widget
+ Text(
+ 'You have pushed the button this many times:',
+ ),
+ Text(
+ '$_counter', // Display counter value
+ style: TextStyle(fontSize: 48),
+ ),
+ ElevatedButton(
+ onPressed: _incrementCounter, // Call incrementCounter when pressed
+ child: const Text('Increment Counter'),
+ ),
+ ],
+ ),
+ );
+ }
+}
+// Stateless Widget Example
+class StatelessExample extends StatelessWidget {
+ @override
+ Widget build(BuildContext context) {
+ return Center(
+ child: Text(
+ 'This is a Stateless Widget!',
+ style: TextStyle(fontSize: 24),
+ ),
+ );
+ }
+}
